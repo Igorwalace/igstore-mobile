@@ -1,4 +1,4 @@
-import { Platform, ScrollView, View } from 'react-native'
+import { ScrollView, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 
 //pages

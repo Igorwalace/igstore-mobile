@@ -6,7 +6,7 @@ const Banner_Fones = () => {
         <View className="bg-gray w-full justify-around h-[150px] rounded-xl flex-row items-center">
             <Image
                 className="w-[115px] h-[120px]"
-                source={require('../assets/phone_6_1.png')}
+                source={require('../../assets/phone_6_1.png')}
             />
             <View>
                 <Text className="text-white font-light" >até</Text>

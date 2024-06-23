@@ -14,11 +14,6 @@ export interface Product {
     title: string;
 }
 export interface Store{
-    name: string
-}
-export interface Banner{
-    icon_box: string,
-    keyboard_banner: string,
-    pc: string,
-    van: string
+    name: string;
+    id: string
 }

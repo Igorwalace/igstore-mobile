@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollView, Text, View } from 'react-native'
-import DB from '../heps/DB'
+import DB from '../../heps/DB'
 import Products from './componentes/products'
 import Loading_Products from './componentes/loading-products'
 

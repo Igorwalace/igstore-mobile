@@ -1,26 +1,28 @@
 import React from 'react'
 import { ScrollView, Text, View } from 'react-native'
 
-//banco
-import DB from '../heps/DB'
+//db
+import DB from '../../../heps/DB'
 
 //pages
-import Products from './componentes/products'
-import Loading_Products from './componentes/loading-products'
+import Loading_Products from '../../home/componentes/loading-products'
+import Products from '../../home/componentes/products'
+import Help_Products from '../help-products'
 
-const Ofertas = () => {
+const Products_Recommended = () => {
 
     const { firestoreProducts } = DB()
+    const { product } = Help_Products()
 
     return (
         <View>
-            <Text className='text-white text-base font-extrabold ml-1 pb-2' >OFERTAS</Text>
+            <Text className='text-white uppercase font-extrabold ml-1 pb-2' >Produtos recomendados</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <Loading_Products />
                 <View className='flex flex-row'>
                     {
                         firestoreProducts
-                            .filter((product) => product.discount != null)
+                            .filter((product_single)=> product_single.id != product.id && product_single.category === product.category)
                             .slice(0, 6)
                             .map((product) => (
                                 <Products key={product.id} product={product} />
@@ -32,4 +34,4 @@ const Ofertas = () => {
     )
 }
 
-export default Ofertas
+export default Products_Recommended

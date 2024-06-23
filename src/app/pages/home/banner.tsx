@@ -11,7 +11,7 @@ export const Banner = () => {
             </View>
             <Image
                 className="w-[115px] h-[130px]"
-                source={require('../assets/cart.png')}
+                source={require('../../assets/cart.png')}
             />
         </View>
     )
