@@ -9,6 +9,7 @@ import { Product } from '../../../heps/tsx';
 //functions
 import { Discount } from '../../../heps/discount';
 import { useNavigation } from '@react-navigation/native';
+import Help_Products from '../../Product_Single/help-products';
 
 interface Products {
     product: Product
@@ -16,10 +17,14 @@ interface Products {
 
 const Products = ({ product }: Products) => {
 
-    const navigation:any = useNavigation();
+    const navigation: any = useNavigation();
+
+    const handleProductSingle = () => {
+        navigation.navigate('Product Single', { product })
+    }
 
     return (
-        <TouchableOpacity activeOpacity={0.7} onPress={()=> {navigation.navigate('Product Single', {product})} } className='mr-2' >
+        <TouchableOpacity activeOpacity={0.7} onPress={handleProductSingle} className='mr-2' >
             <View className='w-[160px] h-[170px] bg-dark_gray rounded-xl items-center justify-center relative' >
                 <Image
                     className='w-[94px] h-[80px]'
@@ -36,7 +41,7 @@ const Products = ({ product }: Products) => {
             <View className='p-2' >
                 <Text className={`text-white text-xs ${product.quant === 0 && 'line-through'}`} >{product.title}</Text>
                 <View className='flex-row items-center justify-start gap-1' >
-                    <Text className='text-white text-sm font-extrabold' >R${Discount(product.price, product.discount).replace('.',',')}</Text>
+                    <Text className='text-white text-sm font-extrabold' >R${Discount(product.price, product.discount).replace('.', ',')}</Text>
                     <Text className={`text-white text-[10px] font-normal line-through ${product.discount === null && 'hidden'}`} >R${product.price.toFixed(2).replace('.', ',')}</Text>
                 </View>
             </View>

@@ -1,11 +1,17 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, TouchableOpacity } from 'react-native'
+
+//reactNavi
+import { useNavigation } from '@react-navigation/native';
 
 const Logo = () => {
+
+    const navigation:any = useNavigation();
+
     return (
-        <View>
+        <TouchableOpacity activeOpacity={0.9} onPress={()=>navigation.navigate('Home')} >
             <Text className='text-white text-2xl text-main font-black' >IG<Text className='text-white' >Store</Text></Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 

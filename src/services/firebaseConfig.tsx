@@ -6,14 +6,14 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: process.env.API_KEY,
+    apiKey: "AIzaSyCK25kLCakrHp0MzO70qO43xvm0Kz9mJdw",
     authDomain: "igstore-mobile.firebaseapp.com",
     projectId: "igstore-mobile",
     storageBucket: "igstore-mobile.appspot.com",
-    messagingSenderId: process.env.MESSAGIND_SENDER_ID,
-    appId: process.env.APP_ID,
+    messagingSenderId: "598791223944",
+    appId: "1:598791223944:web:d88bb3f49a3eceaf607d3d"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);

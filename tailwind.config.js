@@ -17,7 +17,8 @@ module.exports = {
             gray: '#36393C66',
             gray_two: '#676767',
             light_gray: '#A1A1A1',
-            red: '#E10B03'
+            red: '#E10B03',
+            backgroundModal: 'rgba(0,0,0,0.4)'
         },
     },
     plugins: [],

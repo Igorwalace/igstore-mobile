@@ -1,4 +1,4 @@
-import { ScrollView, View } from 'react-native'
+import { Modal, ScrollView, TouchableOpacity, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 
 //pages
@@ -9,6 +9,7 @@ import Ofertas from './ofertas'
 import KeyBoard from './keyboard'
 import Banner_Fones from './banner_fones'
 import Footer from './footer'
+import { Text } from 'react-native'
 
 //react
 

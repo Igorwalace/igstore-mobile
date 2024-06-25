@@ -5,7 +5,6 @@ import { ScrollView, View } from 'react-native'
 import Footer from '../home/footer'
 import Header from '../home/header'
 import Image_Product from './components/image-product'
-import Container_Images from './components/container-imgs'
 import Sub_Description_Product from './components/sub-description-price'
 import Container_Price from './components/container-price'
 import Arrow_Carrinho from './components/arrows-carrinho'
@@ -23,7 +22,6 @@ const Product_Single = () => {
                     <Header />
                 </View>
                 <Image_Product />
-                <Container_Images />
                 <View className='p-5 pt-0' >
                     <Sub_Description_Product />
                 </View>
