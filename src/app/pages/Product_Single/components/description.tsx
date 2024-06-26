@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import Help_Products from '../help-products'
+import Help_Products from '../../../heps/help-products'
 
 const Description = () => {
 

@@ -9,7 +9,6 @@ import { Product } from '../../../heps/tsx';
 //functions
 import { Discount } from '../../../heps/discount';
 import { useNavigation } from '@react-navigation/native';
-import Help_Products from '../../Product_Single/help-products';
 
 interface Products {
     product: Product
@@ -24,8 +23,8 @@ const Products = ({ product }: Products) => {
     }
 
     return (
-        <TouchableOpacity activeOpacity={0.7} onPress={handleProductSingle} className='mr-2' >
-            <View className='w-[160px] h-[170px] bg-dark_gray rounded-xl items-center justify-center relative' >
+        <TouchableOpacity activeOpacity={0.7} onPress={handleProductSingle} className='mx-1' >
+            <View className='w-[155px] h-[170px] bg-dark_gray rounded-xl items-center justify-center relative' >
                 <Image
                     className='w-[94px] h-[80px]'
                     source={{ uri: product.img_main }}

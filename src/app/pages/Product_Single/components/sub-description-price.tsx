@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, View } from 'react-native'
 
 //helps
-import Help_Products from '../help-products';
+import Help_Products from '../../../heps/help-products';
 
 const Sub_Description_Product = () => {
 

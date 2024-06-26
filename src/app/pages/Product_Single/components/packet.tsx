@@ -4,7 +4,7 @@ import { Text, View } from 'react-native'
 //icons
 import { FontAwesome6 } from '@expo/vector-icons';
 import DB from '../../../heps/DB';
-import Help_Products from '../help-products';
+import Help_Products from '../../../heps/help-products';
 
 const Packet = () => {
 

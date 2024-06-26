@@ -2,7 +2,7 @@ import { Image, TouchableOpacity, View } from 'react-native'
 import { useEffect, useState } from 'react'
 
 //helps
-import Help_Products from '../help-products'
+import Help_Products from '../../../heps/help-products'
 
 const Image_Product = () => {
 

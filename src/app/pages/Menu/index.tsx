@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TouchableOpacity, View, Text, Modal } from 'react-native'
+import { TouchableOpacity, View, Text, Modal, Linking } from 'react-native'
 
 //reactNavi
 import { useNavigation } from '@react-navigation/native'
@@ -20,27 +20,31 @@ const Index = () => {
 
     const navigation: any = useNavigation();
 
+    const handleNavigationMenu = (value: string) => {
+        navigation.navigate(value)
+    }
+
     return (
         <>
             <DrawerContentScrollView>
-                <View className='p-5' >
-                    <View className='flex-row justify-between border-b-2 border-dark_gray pb-5' >
+                <View className='p-5 space-y-3' >
+                    <View className='flex-row justify-between border-b-2 border-dark_gray pb-5 mb-3' >
                         <Text className='text-white text-xl font-extrabold'>Menu</Text>
                         <Logo />
                     </View>
-                    <TouchableOpacity activeOpacity={0.8} className='py-3 flex-row gap-4 items-center' >
+                    <TouchableOpacity activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
                         <FontAwesome6 name="user-large" size={18} color="white" />
                         <Text className='text-white text-lg' >Login</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('Home')} activeOpacity={0.8} className='py-3 flex-row gap-4 items-center' >
+                    <TouchableOpacity onPress={()=>handleNavigationMenu('Home')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
                         <Entypo name="home" size={18} color="white" />
                         <Text className='text-white text-lg' >Home</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.8} className='py-3 flex-row gap-4 items-center' >
+                    <TouchableOpacity onPress={()=>handleNavigationMenu('Catalogo')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
                         <FontAwesome name="list-ul" size={18} color="white" />
                         <Text className='text-white text-lg' >Catálogo</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={0.8} className='py-3 flex-row gap-4 items-center' >
+                    <TouchableOpacity onPress={()=>{Linking.openURL('https://meu-website-igor.vercel.app/')}} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
                         <MaterialIcons name="support-agent" size={20} color="white" />
                         <Text className='text-white text-lg' >Suporte</Text>
                     </TouchableOpacity>

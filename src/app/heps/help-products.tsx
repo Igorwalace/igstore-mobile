@@ -1,5 +1,5 @@
 import { useRoute } from "@react-navigation/native";
-import { Product } from "../../heps/tsx";
+import { Product } from "./tsx";
 import { useEffect, useState } from "react";
 
 const Help_Products = () => {

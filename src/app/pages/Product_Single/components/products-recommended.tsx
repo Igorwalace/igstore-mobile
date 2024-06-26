@@ -7,7 +7,7 @@ import DB from '../../../heps/DB'
 //pages
 import Loading_Products from '../../home/componentes/loading-products'
 import Products from '../../home/componentes/products'
-import Help_Products from '../help-products'
+import Help_Products from '../../../heps/help-products'
 
 const Products_Recommended = () => {
 
