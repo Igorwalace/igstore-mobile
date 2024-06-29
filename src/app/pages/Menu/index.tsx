@@ -25,32 +25,30 @@ const Index = () => {
     }
 
     return (
-        <>
-            <DrawerContentScrollView>
-                <View className='p-5 space-y-3' >
-                    <View className='flex-row justify-between border-b-2 border-dark_gray pb-5 mb-3' >
-                        <Text className='text-white text-xl font-extrabold'>Menu</Text>
-                        <Logo />
-                    </View>
-                    <TouchableOpacity activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
-                        <FontAwesome6 name="user-large" size={18} color="white" />
-                        <Text className='text-white text-lg' >Login</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={()=>handleNavigationMenu('Home')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
-                        <Entypo name="home" size={18} color="white" />
-                        <Text className='text-white text-lg' >Home</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={()=>handleNavigationMenu('Catalogo')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
-                        <FontAwesome name="list-ul" size={18} color="white" />
-                        <Text className='text-white text-lg' >Catálogo</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={()=>{Linking.openURL('https://meu-website-igor.vercel.app/')}} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
-                        <MaterialIcons name="support-agent" size={20} color="white" />
-                        <Text className='text-white text-lg' >Suporte</Text>
-                    </TouchableOpacity>
+        <DrawerContentScrollView style={{ backgroundColor: '#0B0B0B' }} >
+            <View className='p-5 space-y-3' >
+                <View className='flex-row justify-between border-b-2 border-dark_gray pb-5 mb-3' >
+                    <Text className='text-white text-xl font-extrabold'>Menu</Text>
+                    <Logo />
                 </View>
-            </DrawerContentScrollView>
-        </>
+                <TouchableOpacity activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
+                    <FontAwesome6 name="user-large" size={15} color="white" />
+                    <Text className='text-white text-sm' >Login</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => handleNavigationMenu('Home')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
+                    <Entypo name="home" size={15} color="white" />
+                    <Text className='text-white text-sm' >Home</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => handleNavigationMenu('Catalogo')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
+                    <FontAwesome name="list-ul" size={15} color="white" />
+                    <Text className='text-white text-sm' >Catálogo</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => { Linking.openURL('https://meu-website-igor.vercel.app/') }} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
+                    <MaterialIcons name="support-agent" size={17} color="white" />
+                    <Text className='text-white text-sm' >Suporte</Text>
+                </TouchableOpacity>
+            </View>
+        </DrawerContentScrollView>
     )
 }
 export default Index

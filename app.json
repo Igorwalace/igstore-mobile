@@ -18,11 +18,18 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.igor_walace.IGStore"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": []
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "d8622e06-a77f-4630-abac-58c945992445"
+      }
+    },
+    "owner": "igor_walace"
   }
 }
