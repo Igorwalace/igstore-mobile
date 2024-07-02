@@ -18,7 +18,7 @@ const Product_Single = () => {
     return (
         <ScrollView className='bg-black' >
             <View className='h-full pt-7' >
-                <View className='p-5 pb-5 border-b-2 border-dark_gray' >
+                <View className='p-7 border-b-2 border-dark_gray' >
                     <Header />
                 </View>
                 <Image_Product />

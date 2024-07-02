@@ -5,9 +5,10 @@ import { ScrollView, Text, View } from 'react-native'
 import DB from '../../../heps/DB'
 
 //pages
-import Loading_Products from '../../home/componentes/loading-products'
-import Products from '../../home/componentes/products'
+import Loading_Products from '../../componentes/loading-products'
+import Products from '../../componentes/products'
 import Help_Products from '../../../heps/help-products'
+import Title from '../../componentes/title'
 
 const Products_Recommended = () => {
 
@@ -16,7 +17,7 @@ const Products_Recommended = () => {
 
     return (
         <View>
-            <Text className='text-white uppercase font-extrabold ml-1 pb-2' >Produtos recomendados</Text>
+            <Title title={`Produtos recomendados`} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <Loading_Products />
                 <View className='flex flex-row'>

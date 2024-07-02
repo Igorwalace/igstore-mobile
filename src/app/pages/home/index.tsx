@@ -1,3 +1,4 @@
+import { Text } from 'react-native'
 import { Modal, ScrollView, TouchableOpacity, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 
@@ -9,7 +10,7 @@ import Ofertas from './ofertas'
 import KeyBoard from './keyboard'
 import Banner_Fones from './banner_fones'
 import Footer from './footer'
-import { Text } from 'react-native'
+import Mouses from './mouses'
 
 //react
 
@@ -35,6 +36,9 @@ const Home = () => {
                 </View>
                 <View className='p-5 w-full' >
                     <KeyBoard />
+                </View>
+                <View className='p-5 w-full' >
+                    <Mouses />
                 </View>
                 <View className={`w-full`} >
                     <Footer />

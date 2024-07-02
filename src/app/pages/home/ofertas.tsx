@@ -5,8 +5,9 @@ import { ScrollView, Text, View } from 'react-native'
 import DB from '../../heps/DB'
 
 //pages
-import Loading_Products from './componentes/loading-products'
-import Products from './componentes/products'
+import Loading_Products from '../componentes/loading-products'
+import Products from '../componentes/products'
+import Title from '../componentes/title'
 
 const Ofertas = () => {
 
@@ -14,7 +15,7 @@ const Ofertas = () => {
 
     return (
         <View>
-            <Text className='text-white text-base font-extrabold ml-1 pb-2' >OFERTAS</Text>
+            <Title title={`Ofertas`} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <Loading_Products />
                 <View className='flex flex-row'>

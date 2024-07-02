@@ -6,6 +6,7 @@ import Mouses from './src/app/pages/Mouses'
 import Keyborad from './src/app/pages/Keyboard'
 import Fones from './src/app/pages/Fones'
 import Catalogo from './src/app/pages/Catalogo';
+import Carrinho from './src/app/pages/Carrinho';
 
 //react navi
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -23,6 +24,7 @@ const StackHome = () => {
       <Stack.Screen name="Keyboard" options={{ headerShown: false, animation: 'ios' }} component={Keyborad} />
       <Stack.Screen name="Fones" options={{ headerShown: false, animation: 'ios' }} component={Fones} />
       <Stack.Screen name="Catalogo" options={{ headerShown: false, animation: 'ios' }} component={Catalogo} />
+      <Stack.Screen name="Carrinho" options={{ headerShown: false, animation: 'ios' }} component={Carrinho} />
       <Stack.Screen
         name="Product Single"
         options={{

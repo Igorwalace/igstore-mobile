@@ -2,7 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 
 //db
-import DB from '../../../heps/DB'
+import DB from '../../heps/DB'
 
 const Loading_Products = () => {
 

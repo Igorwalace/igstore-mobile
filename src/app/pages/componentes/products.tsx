@@ -4,10 +4,10 @@ import { View } from 'react-native'
 
 //icons
 import { AntDesign } from '@expo/vector-icons';
-import { Product } from '../../../heps/tsx';
+import { Product } from '../../heps/tsx';
 
 //functions
-import { Discount } from '../../../heps/discount';
+import { Discount } from '../../heps/discount';
 import { useNavigation } from '@react-navigation/native';
 
 interface Products {

@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 import { DrawerContentScrollView } from '@react-navigation/drawer'
 
 //pages
-import Logo from '../home/componentes/logo'
+import Logo from '../componentes/logo'
 
 //icons
 import { FontAwesome } from '@expo/vector-icons'
@@ -34,10 +34,6 @@ const Index = () => {
                 <TouchableOpacity activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
                     <FontAwesome6 name="user-large" size={15} color="white" />
                     <Text className='text-white text-sm' >Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => handleNavigationMenu('Home')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
-                    <Entypo name="home" size={15} color="white" />
-                    <Text className='text-white text-sm' >Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => handleNavigationMenu('Catalogo')} activeOpacity={0.8} className='space-x-4 p-4 py-2 rounded-2xl flex-row items-center border-2 border-dark_gray' >
                     <FontAwesome name="list-ul" size={15} color="white" />

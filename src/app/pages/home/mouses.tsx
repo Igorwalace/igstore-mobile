@@ -5,19 +5,19 @@ import Products from '../componentes/products'
 import Loading_Products from '../componentes/loading-products'
 import Title from '../componentes/title'
 
-const KeyBoard = () => {
+const Mouses = () => {
 
     const { firestoreProducts } = DB()
 
     return (
         <View>
-            <Title title={`Teclados`} />
+            <Title title={`Mouses`} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <Loading_Products />
                 <View className='flex flex-row'>
                     {
                         firestoreProducts
-                            .filter((product) => product.category === 'keyboard')
+                            .filter((product) => product.category === 'mouses')
                             .slice(0, 6)
                             .map((product) => (
                                 <Products key={product.id} product={product} />
@@ -29,4 +29,4 @@ const KeyBoard = () => {
     )
 }
 
-export default KeyBoard
+export default Mouses
