@@ -14,6 +14,12 @@ const Products_Car = () => {
     return (
         <View className='p-3 pt-5' >
             {
+                carrinho.length < 1 &&
+                <View>
+                    <Text className='text-white text-center text-xl' >Nenhum produto adicionado.</Text>
+                </View>
+            }
+            {
                 carrinho
                     .map((product) => (
                         <View key={product.id} className='flex-row justify-between p-2' >
